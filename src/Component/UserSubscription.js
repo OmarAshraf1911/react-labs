@@ -1,5 +1,7 @@
 import React, { Component } from "react";
-
+const font = {
+  fontSize: "19px",
+};
 class UserSubscription extends Component {
   constructor(props) {
     super(props);
@@ -21,10 +23,12 @@ class UserSubscription extends Component {
 
     return (
       <div>
-        <h2>User Status</h2>
-        <p>Logged In: {isLoggedIn ? "true" : "false"}</p>
-        <p>Subscription Status: {subscription}</p>
-        <button onClick={this.handleSubscription}>Subscribe</button>
+        <h1>User Status</h1>
+        <h2>Logged In: {isLoggedIn ? "true" : "false"}</h2>
+        <h2>Subscription Status: {subscription}</h2>
+        <button style={font} onClick={this.handleSubscription}>
+          Subscribe
+        </button>
       </div>
     );
   }

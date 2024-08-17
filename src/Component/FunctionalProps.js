@@ -4,7 +4,8 @@ const FunctionalProps = (props) => {
   return (
     <div>
       <h2>
-        My name {props.fname} {props.lname},<a href="{props.github}">GitHub</a>,
+        My name: {props.fname} {props.lname} ,
+        <a href="{props.github}">GitHub</a>,{" "}
         <a href="{props.LinkedIn}">LinkedIn</a>
       </h2>
     </div>

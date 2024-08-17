@@ -5,9 +5,9 @@ class ClassProps extends Component {
     const { course1, course2, children } = this.props;
     return (
       <div>
-        <h3>Courses</h3>
-        <p>Course 1: {course1}</p>
-        <p>Course 2: {course2}</p>
+        <h2>Courses:</h2>
+        <h3>Course 1: {course1}</h3>
+        <h3>Course 2: {course2}</h3>
         {children}
       </div>
     );
