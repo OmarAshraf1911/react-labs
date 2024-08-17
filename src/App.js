@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import ClassComponent from "./Component/ClassComponent";
+import FunctionalProps from "./Component/FunctionalProps";
+import FunctionComponent from "./Component/FunctionComponent";
+import ClassProps from "./Component/ClassProps";
+import UserSubscription from "./Component/UserSubscription";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ClassComponent />
+      <FunctionComponent />
+      <FunctionalProps
+        fname="Omar"
+        lname="Ashraf"
+        LinkedIn="https://www.linkedin.com/in/omar-ashraf-abdul-qader/"
+        github="https://github.com/OmarAshraf1911"
+      />
+      <ClassProps course1="React" course2="JS">
+        <p>child element</p>
+      </ClassProps>
+      <UserSubscription></UserSubscription>
     </div>
   );
 }
