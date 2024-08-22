@@ -1,14 +1,18 @@
 import "./App.css";
-import ClassComponent from "./Component/ClassComponent";
-import FunctionalProps from "./Component/FunctionalProps";
-import FunctionComponent from "./Component/FunctionComponent";
-import ClassProps from "./Component/ClassProps";
-import UserSubscription from "./Component/UserSubscription";
+// import ClassComponent from "./Component/ClassComponent";
+// import FunctionalProps from "./Component/FunctionalProps";
+// import FunctionComponent from "./Component/FunctionComponent";
+// import ClassProps from "./Component/ClassProps";
+// import UserSubscription from "./Component/UserSubscription";
+import Counter from "./Component/CounterFunction/counter";
+// import SignIn from "./Component/Sign/SignIn";
+// import SignUp from "./Component/Sign/SignUp";
+import Switch from "./Component/Sign/Switch";
 
 function App() {
   return (
     <div className="App">
-      <ClassComponent />
+      {/* <ClassComponent />
       <FunctionComponent />
       <FunctionalProps
         fname="Omar"
@@ -19,7 +23,11 @@ function App() {
       <ClassProps course1="React" course2="JS">
         <p>child element</p>
       </ClassProps>
-      <UserSubscription></UserSubscription>
+      <UserSubscription></UserSubscription> */}
+      <Counter />
+      {/* <SignIn />
+      <SignUp /> */}
+      <Switch />
     </div>
   );
 }
