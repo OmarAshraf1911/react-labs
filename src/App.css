@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 30px 300px;
+}

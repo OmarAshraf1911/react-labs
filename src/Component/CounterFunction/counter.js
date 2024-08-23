@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./counter.css";
+import "./counterStyle.css";
 
 class Counter extends Component {
   constructor(props) {
@@ -29,10 +29,10 @@ class Counter extends Component {
         <span className="btn" onClick={this.incrementCounter}>
           <i className="bi bi-plus-circle"></i>
         </span>
-        <span>{this.state.counter}</span>
-        <span className="btn" onClick={this.decrementCounter}>
+        <spans className="num">{this.state.counter}</spans>
+        <button className="btn" onClick={this.decrementCounter}>
           <i className="bi bi-dash-circle"></i>
-        </span>
+        </button>
       </div>
     );
   }

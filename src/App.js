@@ -4,11 +4,12 @@ import "./App.css";
 // import FunctionComponent from "./Component/FunctionComponent";
 // import ClassProps from "./Component/ClassProps";
 // import UserSubscription from "./Component/UserSubscription";
-import Counter from "./Component/CounterFunction/counter";
+// import Counter from "./Component/CounterFunction/counter";
 // import SignIn from "./Component/Sign/SignIn";
 // import SignUp from "./Component/Sign/SignUp";
-import Switch from "./Component/Sign/Switch";
-
+// import Switch from "./Component/Sign/Switch";
+// import ProductHome from "./Component/ProductHome/ProductHome";
+import Products from "./Component/ProductHome/Products";
 function App() {
   return (
     <div className="App">
@@ -24,10 +25,11 @@ function App() {
         <p>child element</p>
       </ClassProps>
       <UserSubscription></UserSubscription> */}
-      <Counter />
+      {/* <Counter /> */}
       {/* <SignIn />
       <SignUp /> */}
-      <Switch />
+      {/* <Switch /> */}
+      <Products />
     </div>
   );
 }
