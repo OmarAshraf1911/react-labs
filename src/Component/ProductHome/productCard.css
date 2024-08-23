@@ -6,12 +6,21 @@
   padding: 10px;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
-  /* height: 85vh; */
+  position: relative;
+  height: 85vh;
 }
 
-.xxx {
-  margin-bottom: 5px;
+.info {
+  position: absolute;
+  bottom: 0;
+}
+
+img {
+  transition: 0.3s ease-in;
+}
+
+img:hover {
+  transform: scale(1.1);
 }
 
 /* .description {
