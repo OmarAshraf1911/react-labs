@@ -7,7 +7,7 @@ import "./App.css";
 // import Counter from "./Component/CounterFunction/counter";
 // import SignIn from "./Component/Sign/SignIn";
 // import SignUp from "./Component/Sign/SignUp";
-// import Switch from "./Component/Sign/Switch";
+import Switch from "./Component/Sign/Switch";
 // import ProductHome from "./Component/ProductHome/ProductHome";
 import Products from "./Component/ProductHome/Products";
 function App() {
@@ -26,9 +26,9 @@ function App() {
       </ClassProps>
       <UserSubscription></UserSubscription> */}
       {/* <Counter /> */}
-      {/* <SignIn />
-      <SignUp /> */}
-      {/* <Switch /> */}
+      {/* <SignIn /> */}
+      {/* <SignUp /> */}
+      <Switch />
       <Products />
     </div>
   );
