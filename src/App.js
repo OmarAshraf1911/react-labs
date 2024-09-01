@@ -9,7 +9,7 @@ import "./App.css";
 // import SignUp from "./Component/Sign/SignUp";
 // import Switch from "./Component/Sign/Switch";
 // import ProductHome from "./Component/ProductHome/ProductHome";
-// import Products from "./Component/ProductHome/Products";
+import Products from "./Component/ProductHome/Products";
 // import Comment from "./Component/Comments";
 import CommentForm from "./Component/CommentForm";
 function App() {
@@ -31,8 +31,8 @@ function App() {
       {/* <SignIn /> */}
       {/* <SignUp /> */}
       {/* <Switch /> */}
-      {/* <Products /> */}
-      <CommentForm />
+      <Products />
+      {/* <CommentForm /> */}
     </div>
   );
 }

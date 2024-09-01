@@ -1,6 +1,6 @@
 import React from "react";
 import "./productCard.css";
-import Counter from "../CounterFunction/Counter";
+import CounterWithHooks from "../CounterFunction/CounterWithHooks";
 
 export const ProductHome = ({ product }) => {
   const { id, img, price, description, category, name } = product;
@@ -72,7 +72,7 @@ export const ProductHome = ({ product }) => {
           <span className="text-3xl font-bold text-gray-900 dark:text-white">
             ${price}
           </span>
-          <Counter />
+          <CounterWithHooks />
         </div>
       </div>
     </div>

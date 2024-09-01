@@ -1,7 +1,8 @@
+import React, { useState } from "react";
 import { ProductHome } from "./ProductHome";
 
 const Products = () => {
-  const products = [
+  const [products, setProducts] = useState([
     {
       id: 1,
       img: "https://images.unsplash.com/photo-1593998066526-65fcab3021a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80",
@@ -47,7 +48,20 @@ const Products = () => {
         "Apple MacBook Pro laptop is lorem if you are going to use a passage of Lorem Ipsum, but the majority have suffered alteration in some form you need to be sure there isn't anything.",
       category: "Electronics",
     },
-  ];
+  ]);
+
+  const addProduct = () => {
+    const newProduct = {
+      id: products.length + 1,
+      img: "https://images.unsplash.com/photo-1542291026-7eec264c27ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+      name: "New Product added ",
+      price: 100,
+      description: "This is a new product added to the list.",
+      category: "SPORTS",
+    };
+    setProducts([...products, newProduct]);
+  };
+
   return (
     <main>
       <section className="products">
@@ -55,6 +69,12 @@ const Products = () => {
           <ProductHome key={product.id} product={product} />
         ))}
       </section>
+      <button
+        className="text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
+        onClick={addProduct}
+      >
+        Add New Product
+      </button>
     </main>
   );
 };
