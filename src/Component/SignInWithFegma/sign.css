@@ -1,0 +1,105 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1000px;
+  height: 90vh;
+  background-color: #fff;
+  margin-top: 40px;
+}
+
+.ground img {
+  width: 550px;
+  height: 90vh;
+}
+
+.content {
+  height: 100%;
+}
+
+.content .info {
+  margin: 50px;
+}
+.content .info .title {
+  margin-bottom: 15px;
+}
+.content .info .title .welcome {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 48px;
+}
+
+.content .info .title .account a {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.content .info label {
+  color: #666666;
+}
+
+.content .info input {
+  border: 1px solid #bdbdbd;
+  height: 35px;
+  border-radius: 12px;
+  padding: 0 10px;
+}
+
+.content .info .email,
+.content .info .password,
+.content .info .username {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.content .info .password ul {
+  list-style: unset;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 12px;
+  margin-left: 18px;
+  color: #a3a3a3;
+}
+
+.content .info .password ul li {
+  margin-right: 30px;
+}
+
+.content .info .check {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.content .info .check input {
+  margin: -4px 8px 0 0;
+}
+
+.content .info .Terms p {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+.content .info .Terms p span {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.content .info .submit {
+  width: 200px;
+}
+.content .info .submit button {
+  background-color: #c3c3c3;
+  padding: 10px 20px;
+  border-radius: 32px;
+  font-size: 20px;
+  color: #fff;
+}
+
+.content .info .submit p {
+  font-size: 14px;
+}
+
+.content .info .submit p a {
+  text-decoration: underline;
+}

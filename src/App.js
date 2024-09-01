@@ -1,4 +1,7 @@
 import "./App.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import SignUp from "./Component/SignInWithFegma/SignUp";
+import SignIn from "./Component/SignInWithFegma/SignIn";
 // import ClassComponent from "./Component/ClassComponent";
 // import FunctionalProps from "./Component/FunctionalProps";
 // import FunctionComponent from "./Component/FunctionComponent";
@@ -9,9 +12,10 @@ import "./App.css";
 // import SignUp from "./Component/Sign/SignUp";
 // import Switch from "./Component/Sign/Switch";
 // import ProductHome from "./Component/ProductHome/ProductHome";
-import Products from "./Component/ProductHome/Products";
+// import Products from "./Component/ProductHome/Products";
 // import Comment from "./Component/Comments";
-import CommentForm from "./Component/CommentForm";
+// import CommentForm from "./Component/CommentForm";
+// import SignUp from "./Component/SignInWithFegma/SignUp";
 function App() {
   return (
     <div className="App">
@@ -31,8 +35,15 @@ function App() {
       {/* <SignIn /> */}
       {/* <SignUp /> */}
       {/* <Switch /> */}
-      <Products />
+      {/* <Products /> */}
       {/* <CommentForm /> */}
+      {/* <SignUp /> */}
+      <Router>
+        <Routes>
+          <Route path="/" element={<SignUp />} />
+          <Route path="/login" element={<SignIn />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
